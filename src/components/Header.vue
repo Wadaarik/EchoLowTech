@@ -22,6 +22,7 @@ name: "Header"
 <style scoped>
 .svg{
   max-width: 180px;
+  min-width: 100px;
 }
 .cls-1{fill:#00ff98;}
 </style>

@@ -26,7 +26,7 @@ name: "Footer"
 
 <style scoped>
 .svg{
-  max-width: 100px;
+  width: 100px;
 }
 .cls-1{fill:#00ff98;}
 </style>

@@ -42,8 +42,8 @@ a{
     padding: 10px 45px;
     background: rgba(255, 255, 255, 50%);
     box-shadow: 0 3px 6px rgba(0, 0, 0, 2%);
-    img{
-      max-width: 70px;
+    #Calque_1{
+      width: 180px;
       @media screen and (max-width: 600px) {
         width: 100px;
       }
@@ -112,7 +112,7 @@ a{
         font-style: normal;
         border-radius: 15px;
         padding: 5px 20px;
-        width: max-content;
+        width: 103px;
         box-shadow: 0 3px 6px rgba(0, 0, 0, 16%);
         margin: 0 15px;
         transition: 0.2s;

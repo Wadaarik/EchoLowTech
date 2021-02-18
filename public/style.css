@@ -41,11 +41,11 @@ a {
   background: rgba(255, 255, 255, 0.5);
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.02);
 }
-#header #main-header img {
-  max-width: 70px;
+#header #main-header #Calque_1 {
+  width: 180px;
 }
 @media screen and (max-width: 600px) {
-  #header #main-header img {
+  #header #main-header #Calque_1 {
     width: 100px;
   }
 }
@@ -116,7 +116,7 @@ a {
   font-style: normal;
   border-radius: 15px;
   padding: 5px 20px;
-  width: max-content;
+  width: 103px;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
   margin: 0 15px;
   transition: 0.2s;

@@ -61,6 +61,14 @@ a {
   color: #00804D;
   transition: 0.2s;
 }
+@media screen and (max-width: 600px) {
+  #header #main-header {
+    justify-content: center;
+  }
+  #header #main-header #anchor {
+    display: none;
+  }
+}
 
 #first-veiw {
   width: 100vw;
@@ -71,6 +79,11 @@ a {
   flex-direction: row;
   justify-content: space-around;
   padding: 30px;
+}
+@media screen and (max-width: 600px) {
+  #first-veiw #main-first {
+    flex-direction: column;
+  }
 }
 #first-veiw #main-first #tagline {
   display: flex;
@@ -108,69 +121,6 @@ a {
   transition: 0.2s;
 }
 
-#team {
-  width: 100vw;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  background: url("background-equipe.png") no-repeat center;
-  background-size: contain;
-  padding: 60px 0;
-}
-#team .title {
-  width: 100vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-#team .title h2 {
-  font-family: "Poppins", sans-serif;
-  font-weight: normal;
-  font-size: xx-large;
-  padding-left: 45px;
-}
-#team .title span {
-  background: #00FF98;
-  height: 5px;
-  width: 50px;
-  margin-left: 45px;
-}
-#team #main-team {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  padding: 30px;
-  width: 70vw;
-}
-#team #main-team .row {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin: 20px 0;
-}
-#team #main-team .row .teammate {
-  padding: 20px;
-  background: white;
-  border-radius: 15px;
-}
-#team #main-team .row .teammate img {
-  border-radius: 15px;
-}
-#team #main-team .row .teammate .name {
-  text-align: center;
-}
-#team #main-team .row .teammate .name h4 {
-  font-family: "Poppins", sans-serif;
-  font-weight: normal;
-  font-size: 20px;
-}
-#team #main-team .row .teammate .name p {
-  font-family: "muli", sans-serif;
-  font-weight: normal;
-  font-size: 15px;
-}
-
 #echolowtech {
   width: 100vw;
   display: flex;
@@ -200,11 +150,16 @@ a {
   width: 50px;
   margin-left: 45px;
 }
+@media screen and (max-width: 600px) {
+  #echolowtech .title span {
+    margin: 0;
+    padding: 0;
+  }
+}
 #echolowtech #main-echolowtech {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-left: 90px;
   width: 100%;
   padding: 30px 0;
 }
@@ -214,8 +169,14 @@ a {
   font-weight: normal;
   font-size: 18px;
   width: 50vw;
-  text-align: justify;
+  text-align: center;
   line-height: 20px;
+}
+@media screen and (max-width: 600px) {
+  #echolowtech #main-echolowtech section p span {
+    width: 75vw;
+    text-align: justify;
+  }
 }
 
 #highvslow {
@@ -223,7 +184,7 @@ a {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   padding: 60px 0;
 }
 #highvslow .title {
@@ -245,15 +206,30 @@ a {
   width: 50px;
   margin-left: 45px;
 }
+@media screen and (max-width: 600px) {
+  #highvslow .title {
+    align-items: center;
+  }
+  #highvslow .title h2, #highvslow .title span {
+    margin: 0;
+    padding: 0;
+  }
+}
 #highvslow #text-lowtech {
   display: block;
   font-family: "muli", sans-serif;
   font-weight: normal;
   font-size: 18px;
   width: 50vw;
-  text-align: justify;
+  text-align: center;
   line-height: 20px;
   padding: 30px 45px;
+}
+@media screen and (max-width: 600px) {
+  #highvslow #text-lowtech {
+    text-align: justify;
+    width: 75vw;
+  }
 }
 #highvslow #main-highvslow {
   display: flex;
@@ -263,12 +239,20 @@ a {
   width: 100%;
   padding: 30px 0;
 }
+@media screen and (max-width: 600px) {
+  #highvslow #main-highvslow {
+    flex-direction: column;
+  }
+}
 #highvslow #main-highvslow .data-component {
   max-width: 250px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  padding: 15px;
+  border-radius: 15px;
 }
 #highvslow #main-highvslow .data-component h4 {
   font-family: "Poppins", sans-serif;
@@ -312,6 +296,12 @@ a {
   width: 50px;
   margin-left: 45px;
 }
+@media screen and (max-width: 600px) {
+  #partenaires .title h2, #partenaires .title span {
+    margin: 0;
+    padding: 0;
+  }
+}
 #partenaires #main-partenaires {
   padding: 30px 0;
   width: 90%;
@@ -323,46 +313,88 @@ a {
   align-items: center;
   justify-content: space-evenly;
 }
+@media screen and (max-width: 600px) {
+  #partenaires #main-partenaires ul {
+    flex-direction: column;
+  }
+}
 
-#footer {
+#team {
   width: 100vw;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  padding: 30px 0;
-  box-shadow: 0 -3px 6px rgba(0, 0, 0, 0.05);
+  background: url("background-equipe.png") no-repeat center;
+  background-size: contain;
+  padding: 60px 0;
 }
-#footer #main-footer {
+#team .title {
+  width: 100vw;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+#team .title h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: normal;
+  font-size: xx-large;
+  padding-left: 45px;
+}
+#team .title span {
+  background: #00FF98;
+  height: 5px;
+  width: 50px;
+  margin-left: 45px;
+}
+@media screen and (max-width: 600px) {
+  #team .title {
+    align-items: center;
+  }
+  #team .title h2, #team .title span {
+    margin: 0;
+    padding: 0;
+  }
+}
+#team #main-team {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   padding: 30px;
   width: 70vw;
 }
-#footer #main-footer #anchors-footer ul {
-  list-style: none;
+#team #main-team .row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 20px 0;
 }
-#footer #main-footer #anchors-footer ul li a {
-  text-decoration: none;
-  padding: 0 5px;
+@media screen and (max-width: 600px) {
+  #team #main-team .row {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+#team #main-team .row .teammate {
+  padding: 20px;
+  background: white;
+  border-radius: 15px;
+}
+#team #main-team .row .teammate img {
+  border-radius: 15px;
+}
+#team #main-team .row .teammate .name {
+  text-align: center;
+}
+#team #main-team .row .teammate .name h4 {
   font-family: "Poppins", sans-serif;
-  color: black;
-  transition: 0.2s;
+  font-weight: normal;
+  font-size: 20px;
 }
-#footer #main-footer #anchors-footer ul li a:hover {
-  color: #00804D;
-  transition: 0.2s;
-}
-#footer #main-footer a {
-  text-decoration: none;
-  font-family: "Poppins", sans-serif;
-  color: black;
-  transition: 0.2s;
-}
-#footer #main-footer a:hover {
-  color: #00804D;
-  transition: 0.2s;
+#team #main-team .row .teammate .name p {
+  font-family: "muli", sans-serif;
+  font-weight: normal;
+  font-size: 15px;
 }
 
 #contact {
@@ -391,6 +423,12 @@ a {
   height: 5px;
   width: 50px;
   margin-left: 45px;
+}
+@media screen and (max-width: 600px) {
+  #contact .title h2, #contact .title span {
+    margin: 0;
+    padding: 0;
+  }
 }
 #contact form {
   padding: 30px 0;
@@ -448,6 +486,63 @@ a {
 }
 #contact form button:hover {
   background: #00804D;
+  transition: 0.2s;
+}
+@media screen and (max-width: 600px) {
+  #contact form {
+    width: 90vw;
+  }
+}
+
+#footer {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 0;
+  box-shadow: 0 -3px 6px rgba(0, 0, 0, 0.05);
+}
+#footer #main-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 30px;
+  width: 70vw;
+}
+@media screen and (max-width: 600px) {
+  #footer #main-footer {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+#footer #main-footer #anchors-footer ul {
+  list-style: none;
+}
+@media screen and (max-width: 600px) {
+  #footer #main-footer #anchors-footer ul {
+    margin: 30px 0;
+  }
+}
+#footer #main-footer #anchors-footer ul li a {
+  text-decoration: none;
+  padding: 0 5px;
+  font-family: "Poppins", sans-serif;
+  color: black;
+  transition: 0.2s;
+}
+#footer #main-footer #anchors-footer ul li a:hover {
+  color: #00804D;
+  transition: 0.2s;
+}
+#footer #main-footer a {
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  color: black;
+  transition: 0.2s;
+}
+#footer #main-footer a:hover {
+  color: #00804D;
   transition: 0.2s;
 }
 

@@ -44,6 +44,11 @@ a {
 #header #main-header img {
   max-width: 70px;
 }
+@media screen and (max-width: 600px) {
+  #header #main-header img {
+    width: 100px;
+  }
+}
 #header #main-header #anchor {
   display: flex;
   flex-direction: row;

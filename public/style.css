@@ -37,9 +37,12 @@ a {
   align-items: center;
   justify-content: space-between;
   height: 50px;
-  padding: 10px 30px;
+  padding: 10px 45px;
   background: rgba(255, 255, 255, 0.5);
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.02);
+}
+#header #main-header img {
+  max-width: 70px;
 }
 #header #main-header #anchor {
   display: flex;
@@ -49,7 +52,7 @@ a {
 }
 #header #main-header #anchor a {
   text-decoration: none;
-  padding: 0 5px;
+  padding: 0 10px;
   font-family: "Poppins", sans-serif;
   color: black;
   transition: 0.2s;
@@ -113,7 +116,7 @@ a {
   align-items: center;
   background: url("background-equipe.png") no-repeat center;
   background-size: contain;
-  padding: 30px 0;
+  padding: 60px 0;
 }
 #team .title {
   width: 100vw;
@@ -174,7 +177,7 @@ a {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  padding: 30px 0;
+  padding: 60px 0;
 }
 #echolowtech .title {
   width: 100vw;
@@ -210,6 +213,113 @@ a {
   font-size: 18px;
   width: 50vw;
   text-align: justify;
+  line-height: 20px;
+}
+
+#highvslow {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 60px 0;
+}
+#highvslow .title {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+#highvslow .title h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: normal;
+  font-size: xx-large;
+  padding-left: 45px;
+}
+#highvslow .title span {
+  background: #00FF98;
+  height: 5px;
+  width: 50px;
+  margin-left: 45px;
+}
+#highvslow #text-lowtech {
+  display: block;
+  font-family: "muli", sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  width: 50vw;
+  text-align: justify;
+  line-height: 20px;
+  padding: 30px 45px;
+}
+#highvslow #main-highvslow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  padding: 30px 0;
+}
+#highvslow #main-highvslow .data-component {
+  max-width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+#highvslow #main-highvslow .data-component h4 {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: xx-large;
+  color: #00bf73;
+  padding: 15px 0;
+}
+#highvslow #main-highvslow .data-component p {
+  font-family: "muli", sans-serif;
+  font-weight: normal;
+  font-size: 15px;
+  text-align: justify;
+  line-height: 20px;
+}
+
+#partenaires {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 0;
+}
+#partenaires .title {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#partenaires .title h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: normal;
+  font-size: xx-large;
+  padding-left: 45px;
+}
+#partenaires .title span {
+  background: #00FF98;
+  height: 5px;
+  width: 50px;
+  margin-left: 45px;
+}
+#partenaires #main-partenaires {
+  padding: 30px 0;
+  width: 90%;
+}
+#partenaires #main-partenaires ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 #footer {
@@ -259,7 +369,7 @@ a {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  padding: 30px 0;
+  padding: 60px 0;
 }
 #contact .title {
   width: 100vw;

@@ -33,21 +33,21 @@
           <img src="../assets/img/achard-Marie.jpg" alt="achard-Marie">
           <div class="name">
             <h4>Achard Marie</h4>
-            <p>Trésorier</p>
+            <p>Relation Client</p>
           </div>
         </div>
         <div class="teammate">
           <img src="../assets/img/gombert-aurore.jpg" alt="gombert-aurore">
           <div class="name">
             <h4>Gombert Aurore</h4>
-            <p>Trésorier</p>
+            <p>Trésorière</p>
           </div>
         </div>
         <div class="teammate">
           <img src="../assets/img/boudier-nicolas.jpg" alt="boudier-nicolas">
           <div class="name">
             <h4>Boudier Nicolas</h4>
-            <p>Trésorier</p>
+            <p>Développeur Web</p>
           </div>
         </div>
       </div>
